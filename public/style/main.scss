@@ -1,0 +1,92 @@
+.content {
+  margin-top: 50px;
+}
+.undecorated-link:hover {
+  text-decoration: none;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+.ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
+}
+.browsehappy.jumbotron.hide,
+body.ng-cloak
+{
+  display: block;
+}
+
+/* Reference */
+
+$SumUp: #00a5df;
+$SumUpDark: #0092c6;
+$tweet: #fff;
+$text: #47494d;
+$textInvert: #fff;
+
+/* tweets */
+
+.twitter-app {
+  padding-top: 30px;
+  background: $SumUp;
+  font: "Helvetic Neue", Helvetica, Arial;
+
+  .logo-wrapper {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .app-title {
+    text-align: center;
+    color: $textInvert;
+    margin: 20px 0 50px;
+
+    h2 {
+      font-weight: 100;
+      margin-top: 0;
+    }
+  }
+
+  .tweets {
+    color: $text;
+
+    .tweet {
+      background: $tweet;
+      margin-bottom: 30px;
+      padding: 15px;
+
+      .header-wrapper {
+        .image-wrapper {
+
+          .default-image-holder {
+            background: $SumUp;
+            img {
+            }
+          }
+
+          img {
+            min-height: 200px;
+            width: 100%;
+          }
+        }
+        .user-data {
+          margin: 10px 0 0;
+
+          a {
+            color: $SumUp;
+
+            &:hover {
+              color: $SumUpDark;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .tweet-message {
+        margin: 15px 0;
+      }
+    }
+  }
+}

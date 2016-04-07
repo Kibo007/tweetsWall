@@ -1,0 +1,57 @@
+.content {
+  margin-top: 50px; }
+
+.undecorated-link:hover {
+  text-decoration: none; }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
+.ng-invalid.ng-dirty {
+  border-color: #FA787E; }
+
+.ng-valid.ng-dirty {
+  border-color: #78FA89; }
+
+.browsehappy.jumbotron.hide,
+body.ng-cloak {
+  display: block; }
+
+/* Reference */
+/* tweets */
+.twitter-app {
+  padding-top: 30px;
+  background: #00a5df;
+  font: "Helvetic Neue", Helvetica, Arial; }
+  .twitter-app .logo-wrapper {
+    text-align: center;
+    margin-top: 30px; }
+  .twitter-app .app-title {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0 50px; }
+    .twitter-app .app-title h2 {
+      font-weight: 100;
+      margin-top: 0; }
+  .twitter-app .tweets {
+    color: #47494d; }
+    .twitter-app .tweets .tweet {
+      background: #fff;
+      margin-bottom: 30px;
+      padding: 15px; }
+      .twitter-app .tweets .tweet .header-wrapper .image-wrapper .default-image-holder {
+        background: #00a5df; }
+      .twitter-app .tweets .tweet .header-wrapper .image-wrapper img {
+        min-height: 200px;
+        width: 100%; }
+      .twitter-app .tweets .tweet .header-wrapper .user-data {
+        margin: 10px 0 0; }
+        .twitter-app .tweets .tweet .header-wrapper .user-data a {
+          color: #00a5df; }
+          .twitter-app .tweets .tweet .header-wrapper .user-data a:hover {
+            color: #0092c6;
+            text-decoration: none; }
+      .twitter-app .tweets .tweet .tweet-message {
+        margin: 15px 0; }
+
+/*# sourceMappingURL=style.css.map */

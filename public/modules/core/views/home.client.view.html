@@ -1,0 +1,67 @@
+<section data-ng-controller="HomeController">
+
+    <div class="row">
+        <div class="col-xs-12 logo-wrapper">
+            <a href="http://sumup.de" title="SumUp">
+                <img src="https://secure.sumup.com/assets/logo/sumup_logo_white-ef0dff0befe9a8a0f1a60ad267636e28.png"
+                     alt="SumUp"/>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 app-title">
+            <h2>Grow your business by accepting cards today</h2>
+        </div>
+    </div>
+
+    <div class="tweets">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-unstyled row" masonry>
+                    <li ng-repeat="tweet in twitterData track by $index"
+                        class="col-xs-12 col-sm-6 col-md-4 masonry-brick">
+                        <article class="tweet">
+                            <figure class="row header-wrapper">
+                                <div class="image-wrapper col-xs-12">
+                                    <img ng-src="{{ tweet.entities.media[0].media_url }}"
+                                         alt="{{tweet.text}}"
+                                         ng-show="containMedia(tweet.entities.media[0].media_url)"/>
+                                    <div class="default-image-holder"
+                                         ng-if="!tweet.entities.media[0].media_url">
+                                        <img
+                                             ng-src="modules/core/img/brand/sumup-logo.png"
+                                             alt="SumUp"/>
+                                    </div>
+                                </div>
+
+                                <figcaption class="col-xs-12 user-data">
+                                    <a ng-href="http://www.twitter.com/{{ tweet.user.screen_name }}"
+                                       ng-bind="tweet.user.name"></a>
+                                    <span class="pull-right">@{{ tweet.user.screen_name }}</span>
+                                </figcaption>
+                            </figure>
+
+                            <p ng-bind="tweet.text" class="tweet-message"></p>
+
+                            <footer class="row" class="tweet-footer">
+                                <time pubdate="pubdate"
+                                      am-time-ago="tweet.created_at"
+                                      class="col-xs-6 time">
+                                </time>
+                                <div class="col-xs-3 retweet-wrapper">
+                                    <i class="glyphicon glyphicon-retweet"></i>
+                                    <span ng-bind="tweet.retweet_count"></span>
+                                </div>
+                                <div class="col-xs-3 favorite-wrapper">
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <span ng-bind="tweet.favorite_count"></span>
+                                </div>
+                            </footer>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
